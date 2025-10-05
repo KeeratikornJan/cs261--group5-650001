@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
 
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Pridi", serif;
+    text-decoration: none;
 }
 
 body {
@@ -12,9 +12,45 @@ body {
 }
 
 /* Header */
-.header {
-    width: 300px;
-    border: 10px solid rebeccapurples;
+header {
+    height: 39px;
+    width: 100%;
     background:#E64D4F;
 }
+.navbar {
+    margin: 80px;
+}
+.navdiv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 10px;
+    border-radius: 2rem;
+    padding: 10px;
+    background:#E64D4F;
+    
+}
+.logo {
+    font-family: "Modak";
+    font-size: 40px;
+    list-style: none;
+}
+.logo a {
+    color: #FFFFFF;
+}
 
+ul{
+    display: flex;
+    justify-content: space-around;
+    font-family: "Pridi";
+    background: #E64D4F;
+    list-style: none;
+
+}
+ul li {
+    display: inline-block;
+    position: relative;
+}
+ul li a {
+    color: #FFFFFF;
+}
