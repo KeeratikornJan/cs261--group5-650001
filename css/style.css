@@ -13,27 +13,46 @@ body {
 
 /* Header */
 header {
+    max-width: 100%;
     height: 39px;
-    width: 100%;
     background:#E64D4F;
+    border-bottom:8px solid #F68121;
 }
 .navbar {
-    margin: 80px;
+    margin: 40px;
+    display: flex;
+    justify-content: space-around;
 }
 .navdiv {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 10px;
-    border-radius: 2rem;
-    padding: 10px;
+    border-radius: 32px;
+    width: 1294px;
+    height: 76px;
     background:#E64D4F;
-    
+    border: 2px solid #F68121;
+    border-bottom:8px solid #F68121;
+
+}
+.navdiv ul {
+    display: flex;
+}
+.navdiv ul li {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 70px;
+    margin-right: 70px;
+    border: 40px;
 }
 .logo {
     font-family: "Modak";
     font-size: 40px;
+    font-weight: 200;
     list-style: none;
+    margin-left: 15px;
+    margin-right: 70px;
+    text-shadow: 0px 4px 4px #00000025;
 }
 .logo a {
     color: #FFFFFF;
@@ -43,7 +62,7 @@ ul{
     display: flex;
     justify-content: space-around;
     font-family: "Pridi";
-    background: #E64D4F;
+    font-size: 24px;
     list-style: none;
 
 }
@@ -51,6 +70,22 @@ ul li {
     display: inline-block;
     position: relative;
 }
+
 ul li a {
+    color: #FFFFFF;
+}
+button {
+    width: 242px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    background-color: #2F2F2F;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+button a {
+    font-family: Pridi;
+    font-size: 20px;
+    font-weight: 300;
     color: #FFFFFF;
 }
