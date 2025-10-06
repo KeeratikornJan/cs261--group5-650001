@@ -40,7 +40,7 @@ header {
 }
 .navdiv ul li {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-left: 70px;
     margin-right: 70px;
     border: 40px;
@@ -60,7 +60,7 @@ header {
 
 ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     font-family: "Pridi";
     font-size: 24px;
     list-style: none;
@@ -88,4 +88,25 @@ button a {
     font-size: 20px;
     font-weight: 300;
     color: #FFFFFF;
+}
+section {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid red;
+}
+.container1 {
+    margin-top: 80px;
+    margin-left: 80px;
+}
+.poster {
+    width: 600px;
+    height: 600px;
+    color: #FFFFFF;
+
+    border-radius: 32px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: 1px solid red;
+}
+.detail {
+    border: 1px solid red;
 }
