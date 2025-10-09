@@ -15,6 +15,7 @@ body {
 header {
     max-width: 100%;
     height: 39px;
+    
     background:#E64D4F;
     border-bottom:8px solid #F68121;
 }
@@ -29,8 +30,8 @@ header {
     align-items: center;
     margin: auto;
     border-radius: 32px;
-    width: 1294px;
-    height: 76px;
+    max-width: 1294px;
+    max-height: 76px;
     background:#E64D4F;
     border: 2px solid #F68121;
     border-bottom:8px solid #F68121;
