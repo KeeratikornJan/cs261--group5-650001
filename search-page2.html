@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>exported project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {
+        line-height: 1.15;
+      }
+      body {
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+        -webkit-font-smoothing: antialiased;
+      }
+      p,
+      li,
+      ul,
+      pre,
+      div,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      figure,
+      blockquote,
+      figcaption {
+        margin: 0;
+        padding: 0;
+      }
+      button {
+        background-color: transparent;
+      }
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+      }
+      button,
+      select {
+        text-transform: none;
+      }
+      button,
+      [type="button"],
+      [type="reset"],
+      [type="submit"] {
+        -webkit-appearance: button;
+        color: inherit;
+      }
+      button::-moz-focus-inner,
+      [type="button"]::-moz-focus-inner,
+      [type="reset"]::-moz-focus-inner,
+      [type="submit"]::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+      }
+      button:-moz-focus,
+      [type="button"]:-moz-focus,
+      [type="reset"]:-moz-focus,
+      [type="submit"]:-moz-focus {
+        outline: 1px dotted currentColor;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      pre {
+        white-space: normal;
+      }
+      input {
+        padding: 2px 4px;
+      }
+      img {
+        display: block;
+      }
+      details {
+        display: block;
+        margin: 0;
+        padding: 0;
+      }
+      summary::-webkit-details-marker {
+        display: none;
+      }
+      [data-thq="accordion"] [data-thq="accordion-content"] {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        padding: 0;
+      }
+      [data-thq="accordion"]
+        details[data-thq="accordion-trigger"][open]
+        + [data-thq="accordion-content"] {
+        max-height: 1000vh;
+      }
+      details[data-thq="accordion-trigger"][open]
+        summary
+        [data-thq="accordion-icon"] {
+        transform: rotate(180deg);
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Modak:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Modak:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./search-page2.css" rel="stylesheet" />
+
+      <div class="search-page-container1">
+        <div class="search-page-search-page">
+          <img
+            src="Resourse/Header.png"
+            alt="TUEVENT112711"
+            class="search-page-tuevent11"
+          />
+          <div class="search-page-group1">
+            <div class="search-page-keyboardarrowup1"></div>
+            <div class="search-page-keyboardarrowup2"></div>
+          </div>
+          <div class="filter-dropdown-wrapper">
+            <div
+              class="filter-dropdown-button"
+              onclick="toggleFilterDropdown()"
+            >
+              <span class="filter-dropdown-text">ทั้งหมด</span>
+              <img
+                src="Resourse/icon/down-arrow.png"
+                alt="dropdown arrow"
+                class="filter-dropdown-arrow"
+              />
+            </div>
+
+            <div class="filter-dropdown-list" id="filterDropdownList">
+              <div
+                class="filter-dropdown-option"
+                onclick="selectFilter(event, 'ทั้งหมด')"
+              >
+                ทั้งหมด
+              </div>
+              <div
+                class="filter-dropdown-option"
+                onclick="selectFilter(event, 'วันนี้')"
+              >
+                วันนี้
+              </div>
+              <div
+                class="filter-dropdown-option"
+                onclick="selectFilter(event, 'สัปดาห์นี้')"
+              >
+                สัปดาห์นี้
+              </div>
+              <div
+                class="filter-dropdown-option"
+                onclick="selectFilter(event, 'เดือนนี้')"
+              >
+                เดือนนี้
+              </div>
+              <div
+                class="filter-dropdown-option"
+                onclick="selectFilter(event, 'กำหนดเอง')"
+              >
+                กำหนดเอง
+              </div>
+            </div>
+          </div>
+          <img
+            src="Resourse/icon/settings-sliders.png"
+            alt="settingssliders12717"
+            class="search-page-settingssliders1"
+          />
+          <div class="search-page-group32">
+            <div class="search-page-ellipse8">1</div>
+          </div>
+
+          <div class="search-page-group33">
+            <div class="search-page-ellipse9">2</div>
+          </div>
+
+          <div class="search-page-group34">
+            <div class="search-page-ellipse10">3</div>
+          </div>
+
+          <div class="search-page-downarrow2">&gt;</div>
+
+          <header class="search-page-header">
+            <h1 class="page-title"></h1>
+          </header>
+          <div class="search-page-searchbar">
+            <div class="search-page-rectangle18"></div>
+
+            <img
+              src="Resourse/icon/Icon_Search.png"
+              alt="search"
+              class="search-page-icon-search1"
+            />
+
+            <input
+              type="text"
+              class="search-input"
+              placeholder="พิมพ์คำค้นหา..."
+            />
+
+            <div class="search-button">ค้นหาเลย</div>
+          </div>
+          <span class="search-page-text13">
+            <span class="search-page-text14">อีเว้นท์</span>
+            <span class="search-page-all">ทั้งหมด</span>
+          </span>
+
+          <!-- START: EW DATE PICKER -->
+          <form
+            class="ew-date-search"
+            onsubmit="event.preventDefault(); EWDate_onSubmit();"
+          >
+            <div class="ew-date-group">
+              <label for="ew-from" class="ew-label">ตั้งแต่วันที่</label>
+              <div class="ew-input-wrap">
+                <input
+                  id="ew-from"
+                  class="ew-input"
+                  name="fromDate"
+                  type="text"
+                  placeholder="03/10/2568"
+                />
+              </div>
+            </div>
+
+            <div class="ew-date-group">
+              <label for="ew-to" class="ew-label">ถึงวันที่</label>
+              <div class="ew-input-wrap">
+                <input
+                  id="ew-to"
+                  class="ew-input"
+                  name="toDate"
+                  type="text"
+                  placeholder="10/10/2568"
+                />
+              </div>
+            </div>
+
+            <div class="ew-actions">
+              <button type="submit" class="ew-btn" aria-label="ค้นหากิจกรรม">
+                ค้นหาเลย
+              </button>
+            </div>
+          </form>
+          <!-- END: EW DATE PICKER -->
+
+          <div class="search-page-group24">
+            <img
+              src="Resourse/Poster/Screenshot 2025-10-03 230911.png"
+              alt="Rectangle253066"
+              class="search-page-rectangle25"
+            />
+            <div class="search-page-camera"></div>
+            <span class="search-page-text16">ชื่ออีเว้นท์</span>
+            <span class="search-page-text17">ศ, 03 ต.ค. - 10 ต.ค. 2568</span>
+            <div class="search-page-place">
+              <img src="Resourse/icon/pin.png" alt="pin13066" class="pin" />
+              <span class="search-page-text18">อาคารบรรยายรวม 2</span>
+            </div>
+            <div class="search-page-time">
+              <img
+                src="Resourse/icon/clock.png"
+                alt="clock13066"
+                class="clock"
+              />
+              <span class="search-page-text19">09:30 - 16:30</span>
+            </div>
+            <button class="register-btn">ลงทะเบียน</button>
+          </div>
+
+          <div class="search-page-group25">
+            <div class="search-page-image15"></div>
+
+            <button class="register-btn">ลงทะเบียน</button>
+
+            <span class="search-page-text22">ศ, 03 ต.ค. - 10 ต.ค. 2568</span>
+            <span class="search-page-text24">09:30 - 16:30</span>
+            <span class="search-page-text21">ชื่ออีเว้นท์</span>
+
+            <div class="search-page-group3">
+              <img
+                src="Resourse/icon/pin.png"
+                alt="pin"
+                class="search-page-pin12"
+              />
+              <span class="search-page-text23">อาคารบรรยายรวม 2</span>
+            </div>
+
+            <img
+              src="Resourse/icon/clock.png"
+              alt="clock"
+              class="search-page-clock12"
+            />
+          </div>
+
+          <div class="search-page-group26">
+            <img
+              src="Resourse/Poster/Screenshot 2025-10-03 231132.png"
+              alt="Rectangle273067"
+              class="search-page-rectangle27"
+            />
+            <span class="search-page-text26">ชื่ออีเว้นท์</span>
+            <span class="search-page-text27">ศ, 03 ต.ค. - 10 ต.ค. 2568</span>
+            <div class="search-page-group4">
+              <span class="search-page-text28">อาคารบรรยายรวม 2</span>
+              <img
+                src="Resourse/icon/pin.png"
+                alt="pin13067"
+                class="search-page-pin13"
+              />
+            </div>
+            <span class="search-page-text29">09:30 - 16:30</span>
+            <img
+              src="Resourse/icon/clock.png"
+              alt="clock13067"
+              class="search-page-clock13"
+            />
+            <button class="register-btn">ลงทะเบียน</button>
+          </div>
+
+          <div class="search-page-group27">
+            <img
+              src="Resourse/Poster/Screenshot 2025-10-03 231509.png"
+              alt="Rectangle283067"
+              class="search-page-rectangle28"
+            />
+            <span class="search-page-text31">ชื่ออีเว้นท์</span>
+            <span class="search-page-text32">ศ, 03 ต.ค. - 10 ต.ค. 2568</span>
+
+            <div class="search-page-group5">
+              <span class="search-page-text33">อาคารบรรยายรวม 2</span>
+              <img
+                src="Resourse/icon/pin.png"
+                alt="pin13067"
+                class="search-page-pin14"
+              />
+            </div>
+            <span class="search-page-text34">09:30 - 16:30</span>
+            <img
+              src="Resourse/icon/clock.png"
+              alt="clock13067"
+              class="search-page-clock14"
+            />
+            <button class="register-btn">ลงทะเบียน</button>
+          </div>
+
+          <div class="search-page-group28">
+            <img
+              src="Resourse/Poster/Screenshot 2025-10-03 231640.png"
+              alt="Rectangle293067"
+              class="search-page-rectangle29"
+            />
+            <span class="search-page-text36">ชื่ออีเว้นท์</span>
+            <span class="search-page-text37">ศ, 03 ต.ค. - 10 ต.ค. 2568</span>
+            <div class="search-page-group6">
+              <span class="search-page-text38">อาคารบรรยายรวม 2</span>
+              <img
+                src="Resourse/icon/pin.png"
+                alt="pin13067"
+                class="search-page-pin15"
+              />
+            </div>
+            <span class="search-page-text39">09:30 - 16:30</span>
+            <img
+              src="Resourse/icon/clock.png"
+              alt="clock13067"
+              class="search-page-clock15"
+            />
+            <button class="register-btn">ลงทะเบียน</button>
+          </div>
+          <img class="search-page-rectangle561" />
+          <span class="search-page-text41">ทุกหมวดหมู่</span>
+
+          <div class="search-page-component6"></div>
+          <div class="search-page-component7"></div>
+          <div class="search-page-component8"></div>
+          <span class="search-page-text42">ดนตรี</span>
+          <span class="search-page-text43">แข่งขัน</span>
+          <span class="search-page-text44">วิชาการ</span>
+          <span class="search-page-text45">ค่าย</span>
+          <img
+            src="Resourse/icon/down-arrow.png"
+            alt="keyboardarrowup3067"
+            class="search-page-keyboardarrowup3"
+          />
+          <img
+            src="Resourse/Footer.png"
+            alt="Footer13061"
+            class="search-page-footer1"
+          />
+          <img
+            src="Resourse/png/166cf5e26928bdc0e29fdcfabf0a453c-removebg-preview.png"
+            alt="IMAGE123061"
+            class="search-page-image12"
+          />
+          <img
+            src="Resourse/png/f5a939216a4a27362be8559e3d39475a-removebg-preview.png"
+            alt="IMAGE163061"
+            class="search-page-image162"
+          />
+          <img
+            src="Resourse/png/73ac224d8de4d2b175c040c0d52a72fa-removebg-preview.png"
+            alt="IMAGE263061"
+            class="search-page-image26"
+          />
+          <div class="search-page-menubar">
+            <span class="search-page-text46">TU EVENT</span>
+            <div class="search-page-frame2">
+              <span class="search-page-text47">เข้าสู่ระบบ / สมัครสมาชิก</span>
+            </div>
+            <div class="search-page-frame3">
+              <span class="search-page-text48">หน้าหลัก</span>
+            </div>
+            <div class="search-page-frame4">
+              <div class="search-page-frame5" id="event-button">
+                <span class="search-page-text49">อีเว้นท์</span>
+                <img
+                  src="Resourse/icon/down-arrow.png"
+                  class="search-page-keyboardarrowup6"
+                  alt="arrow"
+                />
+              </div>
+
+              <!-- เมนู dropdown -->
+              <div class="dropdown-menu" id="event-menu">
+                <div class="dropdown-header">ประเภทอีเวนท์</div>
+                <div class="dropdown-column">
+                  <span>ทั้งหมด</span>
+                  <span>ดนตรี</span>
+                  <span>แข่งขัน</span>
+                  <span>วิชาการ</span>
+                </div>
+                <div class="dropdown-column">
+                  <span>ค่าย</span>
+                  <span>เทคโนโลยี</span>
+                  <span>เวิร์คชอป</span>
+                  <span>การเงิน</span>
+                </div>
+                <div class="dropdown-column">
+                  <span>กิจกรรม</span>
+                  <span>กีฬา</span>
+                  <span>ศิลปะ</span>
+                  <span>ธุรกิจ</span>
+                </div>
+              </div>
+            </div>
+
+            <script src="search.js"></script>
+
+            <div class="search-page-frame6">
+              <div class="search-page-frame7">
+                <span class="search-page-text50">สำหรับผู้จัด</span>
+                <img
+                  src="Resourse/icon/down-arrow.png"
+                  alt="keyboardarrowupI271"
+                  class="search-page-keyboardarrowup7"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

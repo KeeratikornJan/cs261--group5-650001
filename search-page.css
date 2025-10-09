@@ -1,0 +1,1598 @@
+.search-page-container1 {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start; /* เพิ่ม */
+}
+
+.search-page-search-page {
+  width: 100%;
+  max-width: 1440px; /* จำกัดความกว้างสูงสุด */
+  height: 2000px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(250, 250, 250, 1);
+  margin: 0 auto; /* จัดกลาง */
+}
+.search-page-tuevent11 {
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%); /* จัดกลาง */
+  width: 100%;
+  max-width: 1440px;
+  height: 814px;
+  position: absolute;
+}
+
+.search-page-group1 {
+  top: 107px;
+  left: 719px;
+  width: 280px;
+  height: 24.000001907348633px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+
+.search-page-keyboardarrowup1 {
+  top: 24px;
+  left: 24.000001907348633px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.search-page-keyboardarrowup2 {
+  top: 24px;
+  left: 280px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+/* CSS */
+.filter-dropdown-wrapper {
+  position: absolute;
+  top: 841px;
+  left: 1253px;
+  z-index: 100;
+}
+
+.filter-dropdown-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.filter-dropdown-text {
+  font-family: Pridi;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.filter-dropdown-arrow {
+  width: 19px;
+  height: 19px;
+  transition: transform 0.3s ease;
+}
+
+.filter-dropdown-button.active .filter-dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.filter-dropdown-list {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 184px;
+  max-height: 340px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 20px 0;
+  display: none;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.filter-dropdown-list.show {
+  display: flex;
+}
+
+.filter-dropdown-option {
+  padding: 18px 20px;
+  font-family: Pridi;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.filter-dropdown-option:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.search-page-settingssliders1 {
+  top: 844px;
+  left: 1203px;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+}
+
+/* วงกลม 1 */
+.search-page-group32 {
+  top: 1445px;
+  left: 630px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-page-ellipse8 {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #f57c00; /* ส้มเข้ม */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Pridi, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+
+/* วงกลม 2 */
+.search-page-group33 {
+  top: 1448px;
+  left: 705px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-page-ellipse9 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f8bb86; /* ส้มอ่อน */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Pridi, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+}
+
+/* วงกลม 3 */
+.search-page-group34 {
+  top: 1448px;
+  left: 775px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-page-ellipse10 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f8bb86; /* ส้มอ่อน */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Pridi, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+}
+
+/* ลูกศร ">" */
+.search-page-downarrow2 {
+  top: 1452px;
+  left: 845px;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  font-size: 24px;
+  font-weight: normal;
+  color: #000;
+  line-height: 25px;
+  text-align: center;
+}
+.search-page-header {
+  top: 0px;
+  left: 0px;
+  width: 1440px;
+  height: 39px;
+  position: absolute;
+}
+
+.search-page-searchbar {
+  position: absolute;
+  top: 283px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 760px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+/* วงรีพื้นหลังสีขาว */
+.search-page-rectangle18 {
+  position: absolute;
+  width: 760px;
+  height: 60px;
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
+  z-index: 0;
+}
+
+/* ไอคอนค้นหา (อนุญาตให้ใช้ src) */
+.search-page-icon-search1 {
+  position: absolute;
+  left: 20px;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  z-index: 1;
+}
+
+/* ช่องกรอกข้อความ */
+.search-input {
+  position: absolute;
+  left: 65px;
+  width: 520px;
+  height: 35px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-family: "Prompt", sans-serif;
+  background: transparent;
+  color: #000;
+  z-index: 1;
+}
+
+/* ปุ่มค้นหาเลย (สร้างด้วย CSS ไม่ใช้รูป) */
+.search-button {
+  position: absolute;
+  right: 10px;
+  width: 127px;
+  height: 45px;
+  background-color: #f68121;
+  color: white;
+  border: none;
+  border-radius: 24px;
+  font-size: 18px;
+  font-family: "Pridi", serif;
+  font-weight: 500;
+  text-align: center;
+  line-height: 45px;
+  cursor: pointer;
+  z-index: 1;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s;
+}
+
+.search-button:hover {
+  background-color: #e36f11;
+}
+
+.search-page-text12 {
+  top: 7px;
+  left: 28px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Pridi;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.search-page-text13 {
+  top: 663px;
+  left: 611px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Pridi;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.search-page-text14 {
+  color: rgba(0, 0, 0, 1);
+}
+
+.search-page-all {
+  color: #f68121;
+}
+
+.search-page-group24 {
+  position: absolute;
+  top: 939px;
+  left: 73px;
+  width: 227px;
+  height: 409px;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  font-family: "Pridi", sans-serif;
+}
+
+/* ✅ พื้นหลังโปสเตอร์ด้านบน */
+.search-page-rectangle25 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 227px;
+  height: 283px;
+  object-fit: cover;
+  opacity: 0.95; /* โปร่งแสงเล็กน้อย */
+  border-radius: 0; /* มุมสี่เหลี่ยมตรง */
+}
+
+/* ✅ เงาและขอบภาพ */
+.search-page-image14 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 227px;
+  height: 283px;
+  border-radius: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+  opacity: 0.95;
+}
+
+/* ✅ ข้อความชื่ออีเว้นท์ */
+.search-page-text16 {
+  position: absolute;
+  top: 340px;
+  left: 14px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+}
+
+/* ✅ วันที่ */
+.search-page-text17 {
+  position: absolute;
+  top: 289px;
+  left: 14px;
+  font-size: 16px;
+  font-weight: 300;
+  color: rgb(230, 77, 79);
+}
+
+/* ✅ เวลา */
+.search-page-time {
+  position: absolute;
+  top: 314px;
+  left: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.clock {
+  width: 12px;
+  height: 12px;
+  margin-right: 4px;
+}
+
+.search-page-text19 {
+  font-size: 14px;
+  color: #000;
+  font-weight: 300;
+}
+
+/* ✅ สถานที่ */
+.search-page-place {
+  position: absolute;
+  top: 372px;
+  left: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.pin {
+  width: 15px;
+  height: 15px;
+  margin-right: 4px;
+}
+
+.search-page-text18 {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+}
+
+/* ✅ ปุ่มลงทะเบียน */
+.register-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgb(230, 77, 79);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.register-btn:hover {
+  background-color: rgb(200, 60, 65);
+}
+
+.register-btn {
+  position: absolute;
+  top: 243px;
+  left: 119px;
+
+  width: 94px;
+  height: 28px;
+
+  background-color: rgba(231, 76, 60, 0.85); /* สีแดงโปร่งแสงนิดหน่อย */
+  color: white;
+
+  border: none;
+  border-radius: 32px;
+
+  font-family: "Pridi", sans-serif;
+  font-size: 16px;
+
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register-btn:hover {
+  background-color: #c0392b; /* สีเข้มขึ้นเมื่อ hover */
+}
+
+.search-page-group25 {
+  position: absolute;
+  top: 940px;
+  left: 340px;
+  width: 227px;
+  height: 408px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  font-family: "Pridi", sans-serif;
+}
+
+/* พื้นหลังด้านบนแทนโปสเตอร์ */
+.search-page-image15 {
+  position: relative;
+  width: 100%;
+  height: 283px;
+  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+    url("Resourse/Poster/Screenshot 2025-10-03 231024.png") center/cover
+      no-repeat;
+}
+
+/* ปุ่มลงทะเบียน */
+.register-btn {
+  position: absolute;
+  top: 245px;
+  right: 10px;
+  background-color: rgba(231, 76, 60, 0.9);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 4px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  z-index: 2;
+}
+.register-btn:hover {
+  background-color: rgba(231, 76, 60, 1);
+}
+
+/* วันที่ */
+.search-page-text22 {
+  position: absolute;
+  top: 295px;
+  left: 14px;
+  color: rgba(230, 77, 79, 1);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/* เวลา */
+.search-page-text24 {
+  position: absolute;
+  top: 320px;
+  left: 32px;
+  font-size: 13px;
+  color: #000;
+}
+
+/* ไอคอนเวลา */
+.search-page-clock12 {
+  position: absolute;
+  top: 323px;
+  left: 14px;
+  width: 12px;
+  height: 12px;
+}
+
+/* ชื่ออีเว้นท์ */
+.search-page-text21 {
+  position: absolute;
+  top: 340px;
+  left: 14px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+/* กลุ่มที่อยู่ */
+.search-page-group3 {
+  position: absolute;
+  top: 370px;
+  left: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.search-page-pin12 {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.search-page-text23 {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.search-page-rectangle352 {
+  top: 242px;
+  left: 119px;
+  width: 94px;
+  height: 28px;
+  position: absolute;
+  border-radius: 32px;
+}
+
+.search-page-rectangle36 {
+  top: 242px;
+  left: 119px;
+  width: 94px;
+  height: 28px;
+  position: absolute;
+  border-radius: 32px;
+}
+
+.search-page-text25 {
+  top: 243px;
+  left: 133px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Pridi;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.search-page-group26 {
+  position: absolute;
+  top: 940.9951171875px;
+  left: 607px;
+  width: 227px;
+  height: 407.0048828125px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  font-family: "Pridi", sans-serif;
+}
+
+.search-page-rectangle14 {
+  top: 0.0048828125px;
+  left: 0px;
+  width: 227px;
+  height: 407px;
+  position: absolute;
+}
+
+.search-page-rectangle27 {
+  top: 0.0048828125px;
+  left: 0px;
+  width: 227px;
+  height: 282px;
+  position: absolute;
+}
+
+.search-page-text26 {
+  top: 338.17401123046875px;
+  left: 16px;
+  color: rgba(0, 0, 0, 1);
+  width: 71px;
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Pridi;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.search-page-text27 {
+  top: 288.2965393066406px;
+  left: 16px;
+  color: rgba(230, 77, 79, 1);
+  width: 173px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Light;
+  text-align: left;
+  font-family: Pridi;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.search-page-group4 {
+  top: 370.0955810546875px;
+  left: 16px;
+  width: 146px;
+  height: 24.9387264251709px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+
+.search-page-text28 {
+  left: 18px;
+  color: rgba(0, 0, 0, 0.5);
+  width: 128px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Pridi;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.search-page-pin13 {
+  top: 4.9784255027771px;
+  left: -4.547473508864641e-13px;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+}
+
+.search-page-image161 {
+  top: 0px;
+  left: 0px;
+  width: 227px;
+  height: 282px;
+  position: absolute;
+}
+
+.search-page-text29 {
+  top: 312.23773193359375px;
+  left: 32px;
+  color: rgba(0, 0, 0, 1);
+  width: 84px;
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Light;
+  text-align: left;
+  font-family: Pridi;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.search-page-clock13 {
+  top: 317.2181091308594px;
+  left: 14.007357597351074px;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+}
+
+.search-page-rectangle353 {
+  top: 241.4117431640625px;
+  left: 119px;
+  width: 94px;
+  height: 28px;
+  position: absolute;
+  border-radius: 32px;
+}
+
+.search-page-text30 {
+  top: 242.4093017578125px;
+  left: 133px;
+  color: rgba(255, 255, 255, 1);
+  width: 66px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Pridi;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.search-page-group27 {
+  position: absolute;
+  top: 939px;
+  left: 874px;
+  width: 227px;
+  height: 409px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  font-family: "Pridi", sans-serif;
+}
+
+.search-page-rectangle15 {
+  top: 1px;
+  left: 0px;
+  width: 227px;
+  height: 408px;
+  position: absolute;
+}
+
+.search-page-rectangle28 {
+  top: 1px;
+  left: 0px;
+  width: 227px;
+  height: 283px;
+  position: absolute;
+}
+
+.search-page-text31 {
+  top: 340px;
+  left: 15px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Pridi;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.search-page-text32 {
+  top: 290px;
+  left: 15px;
+  color: rgba(230, 77, 79, 1);
+  width: 173px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Light;
+  text-align: left;
+  font-family: Pridi;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.search-page-image17 {
+  top: 0px;
+  left: 0px;
+  width: 227px;
+  height: 283px;
+  position: absolute;
+}
+
+.search-page-group5 {
+  top: 372px;
+  left: 15px;
+  width: 146px;
+  height: 25px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+
+.search-page-text33 {
+  left: 18px;
+  color: rgba(0, 0, 0, 0.5);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Pridi;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.search-page-pin14 {
+  top: 5px;
+  left: 0px;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+}
+
+.search-page-text34 {
+  top: 314px;
+  left: 32px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Light;
+  text-align: left;
+  font-family: Pridi;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.search-page-clock14 {
+  top: 319px;
+  left: 14px;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+}
+
+.search-page-rectangle354 {
+  top: 243px;
+  left: 119px;
+  width: 94px;
+  height: 28px;
+  position: absolute;
+  border-radius: 32px;
+}
+
+.search-page-text35 {
+  top: 244px;
+  left: 133px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Pridi;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.search-page-group28 {
+  position: absolute;
+  top: 940px;
+  left: 1141px;
+  width: 227px;
+  height: 408px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  font-family: "Pridi", sans-serif;
+}
+
+.search-page-rectangle29 {
+  top: 0px;
+  left: 0px;
+  width: 227px;
+  height: 283px;
+  position: absolute;
+}
+
+.search-page-text36 {
+  top: 339px;
+  left: 16px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Pridi;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.search-page-text37 {
+  top: 289px;
+  left: 16px;
+  color: rgba(230, 77, 79, 1);
+  width: 173px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Light;
+  text-align: left;
+  font-family: Pridi;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.search-page-image18 {
+  top: 1px;
+  left: 1px;
+  width: 226px;
+  height: 283px;
+  position: absolute;
+}
+
+.search-page-group6 {
+  top: 371px;
+  left: 16px;
+  width: 146px;
+  height: 25px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+
+.search-page-text38 {
+  left: 18px;
+  color: rgba(0, 0, 0, 0.5);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Pridi;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.search-page-pin15 {
+  top: 5px;
+  left: 0px;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+}
+
+.search-page-text39 {
+  top: 313px;
+  left: 32px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Light;
+  text-align: left;
+  font-family: Pridi;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.search-page-clock15 {
+  top: 318px;
+  left: 14px;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+}
+
+.search-page-rectangle355 {
+  top: 242px;
+  left: 119px;
+  width: 94px;
+  height: 28px;
+  position: absolute;
+  border-radius: 32px;
+}
+
+.search-page-text40 {
+  top: 243px;
+  left: 133px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Pridi;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.search-page-rectangle561 {
+  top: 834px;
+  left: 68px;
+  width: 142px;
+  height: 46px;
+  position: absolute;
+  border-color: rgba(246, 129, 33, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 32px;
+}
+
+.search-page-text41 {
+  top: 841px;
+  left: 93px;
+  color: rgba(246, 129, 33, 1);
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Pridi;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.search-page-component5 {
+  top: 834px;
+  left: 218px;
+  width: 110px;
+  height: 46px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.search-page-rectangle562 {
+  top: 0px;
+  left: 0px;
+  width: 110px;
+  height: 46px;
+  position: absolute;
+  border-radius: 32px;
+}
+
+.search-page-component6 {
+  top: 834px;
+  left: 336px;
+  width: 110px;
+  height: 46px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.search-page-component7 {
+  top: 834px;
+  left: 454px;
+  width: 110px;
+  height: 46px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.search-page-component8 {
+  top: 834px;
+  left: 572px;
+  width: 110px;
+  height: 46px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.search-page-text42 {
+  top: 841px;
+  left: 250px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Pridi;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.search-page-text43 {
+  top: 841px;
+  left: 364px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Pridi;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.search-page-text44 {
+  top: 841px;
+  left: 479px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Pridi;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.search-page-text45 {
+  top: 841px;
+  left: 611px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Pridi;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.search-page-keyboardarrowup3 {
+  top: 845px; /* ปรับให้ใกล้กับข้อความ (จาก 869px → 845px) */
+  left: 660px; /* ขยับมาชิดหลังคำว่า 'ค่าย' */
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+
+.search-page-footer1 {
+  top: 1623px;
+  left: -2px;
+  width: 1443px;
+  height: 377px;
+  position: absolute;
+}
+
+.search-page-image12 {
+  top: 265px;
+  left: 51px;
+  width: 349px;
+  height: 349px;
+  position: absolute;
+}
+
+.search-page-image162 {
+  top: 376.15728759765625px;
+  left: 934px;
+  width: 361px;
+  height: 361px;
+  position: absolute;
+}
+
+.search-page-image26 {
+  top: 1746px;
+  left: 1055px;
+  width: 184px;
+  height: 131px;
+  position: absolute;
+}
+
+.search-page-menubar {
+  top: 80px;
+  left: 73px;
+  width: 1294px;
+  background-color: #e64d4f;
+  border-radius: 32px;
+  height: 76px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.search-page-rectangle13 {
+  top: 0px;
+  left: 0px;
+  width: 1294px;
+  height: 76px;
+  position: absolute;
+  border-color: rgba(246, 129, 33, 1);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 32px;
+}
+
+.search-page-text46 {
+  top: 11px;
+  left: 46px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Modak;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.search-page-frame2 {
+  top: 13px;
+  left: 1036px;
+  width: 242px;
+  height: 50px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(47, 47, 47, 1);
+  border-radius: 20px;
+}
+
+.search-page-text47 {
+  top: 10px;
+  left: 22px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Pridi;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.search-page-keyboardarrowup4 {
+  top: 50px;
+  left: 667px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+
+.search-page-keyboardarrowup5 {
+  top: 51px;
+  left: 924px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+
+.search-page-frame3 {
+  top: 13px;
+  left: 326px;
+  width: 160px;
+  height: 50px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.search-page-rectangle31 {
+  top: 0px;
+  left: 0px;
+  width: 160px;
+  height: 50px;
+  position: absolute;
+  border-radius: 24px;
+}
+
+.search-page-text48 {
+  top: 7px;
+  left: 41px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Pridi;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.search-page-frame4 {
+  top: 13px;
+  left: 546px;
+  width: 160px;
+  height: 50px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.search-page-frame5 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  justify-content: center;
+  background-color: #e94f46;
+  border-radius: 40px;
+  padding: 10px 20px;
+  font-family: "Prompt", sans-serif;
+  font-weight: 600;
+  color: white;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* เพิ่ม transition */
+}
+
+.search-page-frame5:hover {
+  background-color: #f68121;
+}
+
+.search-page-frame5.active {
+  background-color: #f68121;
+}
+
+.search-page-text49 {
+  font-size: 24px;
+  font-family: "Pridi", sans-serif;
+  font-weight: 500;
+}
+
+.search-page-keyboardarrowup6 {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+
+/* เมนู dropdown */
+.dropdown-menu {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  height: 325px;
+  width: 513px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.dropdown-header {
+  width: 100%; /* เพิ่ม */
+  font-family: "Pridi", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #000;
+}
+
+.dropdown-menu.show {
+  display: flex;
+}
+
+.dropdown-column {
+  flex: 1 1 0; /* ขยายเท่ากัน, หดได้, ไม่มีฐานกว้าง */
+  min-width: 0; /* สำคัญเมื่อใช้ flex เพื่อไม่ให้ overflow */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; /* กระจายรายการแนวตั้งให้เต็มความสูง */
+  gap: 8px;
+  padding: 6px 8px;
+  box-sizing: border-box;
+}
+
+.dropdown-column span {
+  font-family: "Pridi", sans-serif;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  padding: 8px 12px; /* เพิ่ม */
+  border-radius: 8px; /* เพิ่ม */
+  transition: all 0.2s ease; /* แก้จาก color เป็น all */
+}
+
+.dropdown-column span:hover {
+  color: #e94f46;
+  background-color: #fff3f2; /* เพิ่มพื้นหลังเมื่อ hover */
+}
+
+/* หมุนลูกศรเมื่อเปิดเมนู */
+.search-page-frame5.active .search-page-keyboardarrowup6 {
+  transform: rotate(180deg);
+}
+
+.search-page-frame6 {
+  top: 13px;
+  left: 766px;
+  width: 160px;
+  height: 50px;
+  display: flex;
+  position: absolute;
+  align-items: center; /* จัดให้อยู่กลางแนวตั้ง */
+  justify-content: center; /* จัดให้อยู่กลางแนวนอน */
+  flex-shrink: 0;
+}
+
+.search-page-frame7 {
+  display: flex;
+  align-items: center; /* จัดให้อยู่กลางแนวตั้ง */
+  justify-content: center; /* จัดให้อยู่กลางแนวนอน */
+  gap: 6px; /* ระยะห่างระหว่างข้อความกับไอคอน */
+  justify-content: center;
+  border-radius: 40px;
+  padding: 10px 20px;
+  font-family: "Prompt", sans-serif;
+  font-weight: 600;
+  color: white;
+  position: relative;
+}
+
+.search-page-text50 {
+  color: white;
+  font-size: 20px;
+  font-family: Pridi, serif;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+  position: static; /* เอา absolute ออก */
+  line-height: 1;
+}
+
+.search-page-keyboardarrowup7 {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  position: static; /* เอา absolute ออก */
+}
+
+.search-page-link {
+  display: contents;
+}
+
+.search-page-container2 {
+  right: 50px;
+  border: 1px solid #ffffff5c;
+  bottom: 30px;
+  display: flex;
+  z-index: 22;
+  position: fixed;
+  box-shadow: 5px 5px 10px 0px rgba(31, 31, 31, 0.4);
+  min-height: auto;
+  align-items: center;
+  padding-top: 8px;
+  padding-left: 12px;
+  border-radius: 8px;
+  padding-right: 12px;
+  padding-bottom: 8px;
+  backdrop-filter: blur(6px);
+  background-color: rgba(41, 41, 41, 0.41);
+}
+
+.search-page-icon1 {
+  width: 24px;
+  margin-right: 4px;
+}
+
+.search-page-text51 {
+  color: white;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.search-page-header {
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(to bottom, #e64d4f, #e64d4f);
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+/* ข้อความ Search Page */
+.page-title {
+  color: #ccc;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
