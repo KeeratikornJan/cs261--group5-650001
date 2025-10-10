@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+</head>
+
+<body>
+    <header></header>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="#">TU EVENT</a> </div>
+            <ul>
+                <li class="navbutton"><a href="#">หน้าหลัก</a></li>
+                <li class="navbutton">
+                    <a href="#">อีเว้นท์<i class="material-icons">keyboard_arrow_down</i></a>
+                    <ul class="dropdown">
+                        <a>ประเภทอีเว้นท์</a>
+                        <div class="dropdown_item">
+                            <li><a href="#">ทั้งหมด</a></li>
+                            <li><a href="#">ค่าย</a></li>
+                            <li><a href="#">กิจกรรม</a></li>
+                            <li><a href="#">ดนตรี</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li class="navbutton"><a href="#">สำหรับผู้จัด<i class="material-icons">keyboard_arrow_down</i></a></li>
+            </ul>
+            <button><a href="#">เข้าสู่ระบบ/สมัครสมาชิก</a></button>
+        </div>
+    </nav>
+	
+	// ใส่สคริปต์ดึงข้อมูลจริง 
+	<div id="list"></div>
+	<script>
+	async function load(){
+	  const res = await fetch('/api/events?page=0&limit=12&sort=startDate&dir=asc');
+	  const page = await res.json();
+	  document.getElementById('list').innerHTML = page.content.map(ev => `
+	    <article>
+	      <img src="${ev.imageUrl || '/Resourse/Poster/Header.png'}">
+	      <h3>${ev.title ?? '-'}</h3>
+	      <p>${ev.location ?? '-'}</p>
+	      <a href="/event-detail.html?id=${ev.id}">ดูรายละเอียด</a>
+	    </article>
+	  `).join('');
+	}
+	load();
+	</script>
+
+
+</body>
+
+</html>
+
