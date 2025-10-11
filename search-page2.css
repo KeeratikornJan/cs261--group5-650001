@@ -1391,7 +1391,7 @@
 
 .search-page-frame4 {
   top: 13px;
-  left: 546px;
+  left: 570px;
   width: 160px;
   height: 50px;
   display: flex;
@@ -1438,7 +1438,6 @@
   transition: transform 0.3s ease;
 }
 
-/* เมนู dropdown */
 .dropdown-menu {
   position: absolute;
   top: 60px;
@@ -1456,7 +1455,7 @@
 }
 
 .dropdown-header {
-  width: 100%; /* เพิ่ม */
+  width: 100%;
   font-family: "Pridi", sans-serif;
   font-weight: 600;
   font-size: 18px;
@@ -1468,60 +1467,71 @@
 }
 
 .dropdown-column {
-  flex: 1 1 0; /* ขยายเท่ากัน, หดได้, ไม่มีฐานกว้าง */
-  min-width: 0; /* สำคัญเมื่อใช้ flex เพื่อไม่ให้ overflow */
+  flex: 1 1 0;
+  min-width: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-around; /* กระจายรายการแนวตั้งให้เต็มความสูง */
+  justify-content: space-around;
   gap: 8px;
   padding: 6px 8px;
   box-sizing: border-box;
 }
 
-.dropdown-column span {
+/* ✅ แทนที่ span ด้วย a */
+.dropdown-column a {
+  text-decoration: none;
   font-family: "Pridi", sans-serif;
   font-size: 16px;
   color: #333;
   cursor: pointer;
-  padding: 8px 12px; /* เพิ่ม */
-  border-radius: 8px; /* เพิ่ม */
-  transition: all 0.2s ease; /* แก้จาก color เป็น all */
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  display: block;
 }
 
-.dropdown-column span:hover {
+.dropdown-column a:hover {
   color: #e94f46;
-  background-color: #fff3f2; /* เพิ่มพื้นหลังเมื่อ hover */
+  background-color: #fff3f2;
 }
 
-/* หมุนลูกศรเมื่อเปิดเมนู */
 .search-page-frame5.active .search-page-keyboardarrowup6 {
   transform: rotate(180deg);
 }
 
 .search-page-frame6 {
-  top: 13px;
+  top: 12px;
   left: 766px;
   width: 160px;
   height: 50px;
-  display: flex;
   position: absolute;
-  align-items: center; /* จัดให้อยู่กลางแนวตั้ง */
-  justify-content: center; /* จัดให้อยู่กลางแนวนอน */
-  flex-shrink: 0;
 }
 
 .search-page-frame7 {
+  position: absolute;
+  top: 13px; /* เพิ่มใหม่ */
+  left: 766px; /* เพิ่มใหม่ (ขยับขวาออกมา) */
+  width: 160px; /* เพิ่มใหม่ */
+  height: 50px; /* เพิ่มใหม่ */
   display: flex;
-  align-items: center; /* จัดให้อยู่กลางแนวตั้ง */
-  justify-content: center; /* จัดให้อยู่กลางแนวนอน */
-  gap: 6px; /* ระยะห่างระหว่างข้อความกับไอคอน */
+  align-items: center;
   justify-content: center;
+  gap: 6px;
   border-radius: 40px;
   padding: 10px 20px;
   font-family: "Prompt", sans-serif;
   font-weight: 600;
   color: white;
-  position: relative;
+  text-decoration: none;
+  background-color: #e94f46;
+}
+
+.search-page-frame7:hover {
+  background-color: #f68121;
+}
+
+.search-page-frame7.active {
+  background-color: #f68121;
 }
 
 .search-page-text50 {
