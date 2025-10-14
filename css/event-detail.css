@@ -14,7 +14,6 @@ body {
 header {
     max-width: 100%;
     height: 39px;
-    
     background:#E64D4F;
     border-bottom:8px solid #F68121;
 }
@@ -30,8 +29,8 @@ header {
     align-items: center;
     margin: auto;
     border-radius: 32px;
-    max-width: 1294px;
-    max-height: 76px;
+    width: 1294px;
+    height: 76px;
     background:#E64D4F;
     border: 2px solid #F68121;
     border-bottom:8px solid #F68121;
@@ -91,7 +90,7 @@ ul{
     position: absolute;
     top: 50px;
     background-color: #FFFFFF;
-    min-width: 513px;
+    max-width: 513px;
     border-radius: 32px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
@@ -102,7 +101,7 @@ ul{
     font-size: 20px;
     font-weight: 500;
     text-align: left;
-    margin: 30px;
+    margin: 45px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -152,7 +151,160 @@ button a {
     color: #FFFFFF;
 }
 /*Section*/
-
+section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.container1 {
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 40px;
+}
+.container2 {
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 80px;
+}
+.poster {
+    width: 600px;
+    height: 600px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    border-radius: 32px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.poster img {
+    height: 600px;
+}
+.button_reg {
+    width: 290px;
+    height: 70px;
+    background-color: #F68121;
+    margin-top: 65px;
+    float: right;
+    align-content: center;
+    text-align: center;
+    border-radius: 32px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.button_reg a {
+    font-family: "Pridi", serif;
+    font-size: 32px;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+.button_reg:hover {
+    background-color: #e36f11;
+}
+.detail {
+    font-family: "Pridi", serif;
+}
+.detail h1 {
+    font-size: 40px;
+    font-weight: 400;
+    font-style: normal;
+}
+.catagories {
+    width: 140px;
+    height: 40px;
+    border: 2px solid #F68121;
+    border-radius: 32px;
+    align-content: center;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.detail a {
+    color: #F68121;
+    font-size: 20px;
+    font-weight: 300;
+}
+.detail p {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 300;
+    margin: 20px;
+    margin-left: 0;
+}
+.detail p i {
+    margin-left: 0;
+    margin-right: 5px;
+}
+.box_members {
+    font-family: "Pridi";
+    width: 175px;
+    height: 110px;
+    color: black;
+    border-radius: 32px;
+    margin-bottom: 20px;
+    align-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.box_members h2 {
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.box_members_num {
+    border-radius: 32px;
+    color: #E64D4F;
+    align-content: center;
+    text-align: center;
+    margin: auto;
+    width: 95px;
+    border: 4px solid #E64D4F;
+}
+.box_members_num p {
+    font-size: 20px;
+    font-weight: 400;
+    justify-content: center;
+    margin: 0;
+}
+.box_members_num p i {
+    margin-right: 15px;
+}
+.box_organizes{
+    width: 600px;
+    color: black;
+    border-radius: 32px;
+    margin-bottom: 20px;
+    padding: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.box_organizes h1 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.box_organizes p {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;
+}
+.box_details {
+    width: 600px;
+    color: black;
+    border-radius: 32px;
+    margin-bottom: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.box_details h1 {
+    font-size: 24px;
+    font-weight: 400;
+}
+.box_details p {
+    font-size: 20px;
+    font-weight: 300;
+}
 /*Footer*/
 footer {
     z-index: -1;
