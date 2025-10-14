@@ -307,11 +307,21 @@ section {
 }
 /*Footer*/
 footer {
-    z-index: -1;
-}
-footer img {
-    float: inline-end;
+    position: relative;
     width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.Footer-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    float: inline-end;
     margin-top: -300px;
-    z-index: 2;
+}
+.Footer-tape {
+    position: absolute;
+    right: 15%;
+    bottom: 25%;
+    width: 10%;
 }
