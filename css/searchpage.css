@@ -281,7 +281,7 @@ section {
 }
 .Container_content {
     display: block;
-    width: 100%;
+    position: relative;
 }
 .content-text {
     display: flex;
@@ -302,11 +302,14 @@ section {
 .search-page-text2 {
     color: #F68121;
 }
+
+.filterbar {
+    display: flex;
+    justify-content: space-around;
+}
 /*Catagories*/
 .Catagories {
     display: flex;
-    position: absolute;
-    left: 100px;
     margin-top: 400px;
 }
 .Catagories-text1 {
@@ -435,17 +438,18 @@ section {
 /*Filter*/
 .filter-dropdown-wrapper {
     display: flex;
-    position: absolute;
-    right: 100px;
     margin-top: 400px;
 }
-
+.Container_filter {
+    position: relative;
+}
 .filter-dropdown-button {
     display: flex;
     align-items: center;
     gap: 10px;
     cursor: pointer;
     padding: 5px;
+    position: relative;
 }
 .filter-dropdown-list {
     display: none;
@@ -527,12 +531,15 @@ section {
 
 /* ==== EW date picker (append) ==== */
 .date-picker-container {
+    display: none;
+    justify-content: center;
+}
+.date-picker-container.show {
     display: flex;
     justify-content: center;
 }
 .ew-date-search {
-    position: absolute;
-    margin-top: 500px;
+    margin-top: 50px;
     display: flex;
     gap: 12px;
     align-items: flex-end;
@@ -611,7 +618,7 @@ section {
     padding: 0 100px;
     box-sizing: border-box; /* ป้องกัน padding กระทบ layout */
     place-items: center;
-    margin-top: 650px;
+    margin-top: 50px;
     width: 100%;
 }
 

@@ -8,20 +8,35 @@ function toggleFilterDropdown() {
   button.classList.toggle("activeFilter");
 }
 
-function selectFilter(event, option) {
-  event.stopPropagation();
-
-  const textElement = document.querySelector(".filter-dropdown-text");
-  textElement.textContent = option;
-
+document.addEventListener("DOMContentLoaded", () => {
   const dropdown = document.getElementById("filterDropdownList");
   const button = document.querySelector(".filter-dropdown-button");
+  const textElement = document.querySelector(".filter-dropdown-text");
+  const datePicker = document.querySelector(".date-picker-container");
 
-  dropdown.classList.remove("showFilter");
-  button.classList.remove("activeFilter");
+  // ฟังก์ชันหลัก: เรียกเมื่อเลือก filter
+  window.selectFilter = (event, option) => {
+    textElement.textContent = option; // เปลี่ยนข้อความในปุ่ม filter
+    dropdown.classList.remove("showFilter");
+    button.classList.remove("activeFilter");
 
-  console.log("Selected filter:", option);
-}
+    // ถ้าเลือก "กำหนดเอง" ให้แสดง date picker
+    if (option === "กำหนดเอง") {
+      datePicker.classList.add("show");
+      datePicker.scrollIntoView({ behavior: "smooth", block: "center" });
+    } else {
+      datePicker.classList.remove("show");
+    }
+
+    console.log("Selected filter:", option);
+  };
+
+  // toggle dropdown (จาก onclick ใน HTML)
+  window.toggleFilterDropdown = () => {
+    dropdown.classList.toggle("showFilter");
+    button.classList.toggle("activeFilter");
+  };
+});
 
 function togglecatagoriesDropdown() {
   const dropdown = document.getElementById("catagoriesDropdownList");
@@ -71,6 +86,7 @@ document.addEventListener("click", function (event) {
     if (button) button.classList.remove("activeCatagory");
   }
 });
+
 
 
 // scroll ไปหน้า searchpage เมื่ออยู่หน้าอื่น
