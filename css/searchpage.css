@@ -820,6 +820,27 @@ section {
     cursor: pointer;
 }
 
+/*404 page*/
+.empty-state {  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.empty-icon {
+  width: 95px;
+  height: 95px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.empty-text {
+  font-size: 36px;
+  color: #000;
+  font-family: Pridi;
+  font-style: normal;
+}
 
 /*Footer*/
 footer {
