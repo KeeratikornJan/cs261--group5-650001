@@ -22,7 +22,7 @@
                     <ul class="dropdown">
                         <a>ประเภทอีเว้นท์</a>
                         <div class="dropdown_item">
-                            <li><a href="#">ทั้งหมด</a></li>
+                            <li><a href="searchpage1.html?scroll=Content">ทั้งหมด</a></li>
                             <li><a href="#">ค่าย</a></li>
                             <li><a href="#">กิจกรรม</a></li>
                             <li><a href="#">ดนตรี</a></li>
@@ -49,20 +49,27 @@
             <button><a href="#">เข้าสู่ระบบ/สมัครสมาชิก</a></button>
         </div>
     </nav>
-    <img src="Resourse/Header.png" alt="TUEVENT" class="search-page-background-top" />
-    <div class="search-page-searchbar">
-        <div class="searchbar-rectangle"></div>
-        <img src="Resourse/icon/Icon_Search.png" alt="search" class="icon-search" />
-        <input type="text" class="search-input" placeholder="พิมพ์คำค้นหา..." />
-        <button class="search-button"><a href="#"></a>ค้นหาเลย</a></button>
+    <!-- Searchbar -->
+    <div class="Searchblock">
+        <img src="Resourse/Header.png" alt="TUEVENT" class="search-page-background-top" />
+        <div class="search-page-searchbar">
+            <div class="searchbar-rectangle"></div>
+            <img src="Resourse/icon/Icon_Search.png" alt="search" class="icon-search" />
+            <input type="text" class="search-input" placeholder="พิมพ์คำค้นหา..." />
+            <button class="search-button"><a href="#"></a>ค้นหาเลย</a></button>
+        </div>
+        <img src="Resourse/png/Header-searchpage1.png" alt="Head" class="search-page-head" />
+        <img src="Resourse/png/Header-searchpage2.png" alt="Questionmark" class="search-page-questionmark" />
     </div>
 
     <!-- Container -->
     <section>
-        <div class="Container_content">
-            <div class="search-page-text">
-                <span class="search-page-text1">อีเว้นท์</span>
-                <span class="search-page-text2">ทั้งหมด</span>
+        <div class="Container_content" id="Content">
+            <div class="content-text">
+                <div class="search-page-text">
+                    <span class="search-page-text1">อีเว้นท์</span>
+                    <span class="search-page-text2">ทั้งหมด</span>
+                </div>
             </div>
             <!-- Catagories -->
             <div class="Catagories">
@@ -81,27 +88,29 @@
                 <div class="Catagories-item">
                     <span class="Catagories-text5">ค่าย</span>
                 </div>
+
                 <div class="catagories-dropdown-button" onclick="togglecatagoriesDropdown()">
                     <i class="material-icons" id="Other-Catagories">keyboard_arrow_down</i>
                     <div class="catagories-dropdown-list" id="catagoriesDropdownList">
-                        <div class="catagories-dropdown-option" onclick="window.location.href='searchpage1.html'">
-                            <span>ทั้งหมด</span>
-                        </div>
-                        <div class="catagories-dropdown-option" onclick="selectcatagories(event, 'วันนี้')">
-                            <span>วันนี้</span>
-                        </div>
-                        <div class="catagories-dropdown-option" onclick="selectcatagories(event, 'สัปดาห์นี้')">
-                            <span>สัปดาห์นี้</span>
-                        </div>
-                        <div class="catagories-dropdown-option" onclick="selectcatagories(event, 'เดือนนี้')">
-                            <span>เดือนนี้</span>
-                        </div>
-                        <div class="catagories-dropdown-option" onclick="window.location.href='searchpage2.html'">
-                            <span>กำหนดเอง</span>
-                        </div>
+                        <ul class="catagories-dropdown-option">
+                            <a>ประเภทอีเว้นท์</a>
+                            <div class="dropdown_item">
+                                <li><a href="searchpage1.html?scroll=Content">ทั้งหมด</a></li>
+                                <li><a href="#">ค่าย</a></li>
+                                <li><a href="#">กิจกรรม</a></li>
+                                <li><a href="#">ดนตรี</a></li>
+                                <li><a href="#">เทคโนโลยี</a></li>
+                                <li><a href="#">กีฬา</a></li>
+                                <li><a href="#">แข่งขัน</a></li>
+                                <li><a href="#">เวิร์คชอป</a></li>
+                                <li><a href="#">ศิลปะ</a></li>
+                                <li><a href="#">วิชาการ</a></li>
+                                <li><a href="#">การเงิน</a></li>
+                                <li><a href="#">ธุรกิจ</a></li>
+                            </div>
+                        </ul>
                     </div>
                 </div>
-
             </div>
 
             <!-- filter -->
@@ -109,11 +118,11 @@
                 <div class="filter-dropdown-button" onclick="toggleFilterDropdown()">
                     <img src="Resourse/icon/filter.png" alt="filter" class="icon-filter" />
                     <span class="filter-dropdown-text">กำหนดเอง</span>
-                    <i class="material-icons" id="arrow" alt="dropdown arrow">keyboard_arrow_down</i>
+                    <i class="material-icons" alt="dropdown arrow">keyboard_arrow_down</i>
                 </div>
 
                 <div class="filter-dropdown-list" id="filterDropdownList">
-                    <div class="filter-dropdown-option" onclick="window.location.href='searchpage1.html'">
+                    <div class="filter-dropdown-option" onclick="window.location.href='searchpage1.html?scroll=Content'">
                         <span>ทั้งหมด</span>
                     </div>
                     <div class="filter-dropdown-option" onclick="selectFilter(event, 'วันนี้')">
@@ -125,16 +134,153 @@
                     <div class="filter-dropdown-option" onclick="selectFilter(event, 'เดือนนี้')">
                         <span>เดือนนี้</span>
                     </div>
-                    <div class="filter-dropdown-option" onclick="window.location.href='searchpage2.html'">
+                    <div class="filter-dropdown-option" onclick="window.location.href='searchpage2.html?scroll=Content'">
                         <span>กำหนดเอง</span>
                     </div>
                 </div>
+            </div>
+
+            <!-- START: EW DATE PICKER -->
+            <div class="date-picker-container">
+                <form class="ew-date-search" onsubmit="event.preventDefault(); EWDate_onSubmit();">
+                    <div class="ew-date-group">
+                        <label for="ew-from" class="ew-label">ตั้งแต่วันที่</label>
+                        <div class="ew-input-wrap">
+                            <input id="ew-from" class="ew-input" name="fromDate" type="text" placeholder="03/10/2568" />
+                        </div>
+                    </div>
+
+                    <div class="ew-date-group">
+                        <label for="ew-to" class="ew-label">ถึงวันที่</label>
+                        <div class="ew-input-wrap">
+                            <input id="ew-to" class="ew-input" name="toDate" type="text" placeholder="10/10/2568" />
+                        </div>
+                    </div>
+
+                    <div class="ew-actions">
+                        <button type="submit" class="ew-btn" aria-label="ค้นหากิจกรรม">
+                            ค้นหาเลย
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <!-- END: EW DATE PICKER -->
+        </div>
+
+
+
+        <!-- Poster อีเว้นท์ -->
+        <div class="Poster_container">
+            <div class="Poster">
+                <div class="search-page-group"><a href="event-detail.html">
+                        <img src="Resourse/Poster/Screenshot 2025-10-03 230911.png" alt="Poster"
+                            class="search-page-Poster" />
+
+                        <span class="search-page-date">ศ, 03 ต.ค. - 10 ต.ค. 2568</span>
+                        <div class="search-page-time">
+                            <img src="Resourse/icon/clock.png" alt="clock" class="clock" />
+                            <span class="search-page-clock">09:30 - 16:30</span>
+                        </div>
+                        <span class="search-page-name">ชื่ออีเว้นท์</span>
+                        <div class="search-page-place">
+                            <img src="Resourse/icon/pin.png" alt="pin" class="pin" />
+                            <span class="search-page-pin">อาคารบรรยายรวม 2</span>
+                        </div>
+
+                        <button class="register-btn">ลงทะเบียน</button>
+                    </a>
+                </div>
+                <div class="search-page-group">
+                    <img src="Resourse/Poster/Screenshot 2025-10-03 231024.png" alt="Poster"
+                        class="search-page-Poster" />
+                    <div class="search-page-camera"></div>
+                    <span class="search-page-date">ศ, 03 ต.ค. - 10 ต.ค. 2568</span>
+                    <div class="search-page-time">
+                        <img src="Resourse/icon/clock.png" alt="clock" class="clock" />
+                        <span class="search-page-clock">09:30 - 16:30</span>
+                    </div>
+                    <span class="search-page-name">ชื่ออีเว้นท์</span>
+                    <div class="search-page-place">
+                        <img src="Resourse/icon/pin.png" alt="pin" class="pin" />
+                        <span class="search-page-pin">อาคารบรรยายรวม 2</span>
+                    </div>
+
+                    <button class="register-btn">ลงทะเบียน</button>
+                </div>
+                <div class="search-page-group">
+                    <img src="Resourse/Poster/Screenshot 2025-10-03 231132.png" alt="Poster"
+                        class="search-page-Poster" />
+                    <div class="search-page-camera"></div>
+
+                    <span class="search-page-date">ศ, 03 ต.ค. - 10 ต.ค. 2568</span>
+                    <div class="search-page-time">
+                        <img src="Resourse/icon/clock.png" alt="clock" class="clock" />
+                        <span class="search-page-clock">09:30 - 16:30</span>
+                    </div>
+                    <span class="search-page-name">ชื่ออีเว้นท์</span>
+                    <div class="search-page-place">
+                        <img src="Resourse/icon/pin.png" alt="pin" class="pin" />
+                        <span class="search-page-pin">อาคารบรรยายรวม 2</span>
+                    </div>
+
+                    <button class="register-btn">ลงทะเบียน</button>
+                </div>
+                <div class="search-page-group">
+                    <img src="Resourse/Poster/Screenshot 2025-10-03 231509.png" alt="Poster"
+                        class="search-page-Poster" />
+
+                    <span class="search-page-date">ศ, 03 ต.ค. - 10 ต.ค. 2568</span>
+                    <div class="search-page-time">
+                        <img src="Resourse/icon/clock.png" alt="clock" class="clock" />
+                        <span class="search-page-clock">09:30 - 16:30</span>
+                    </div>
+                    <span class="search-page-name">ชื่ออีเว้นท์</span>
+                    <div class="search-page-place">
+                        <img src="Resourse/icon/pin.png" alt="pin" class="pin" />
+                        <span class="search-page-pin">อาคารบรรยายรวม 2</span>
+                    </div>
+
+                    <button class="register-btn">ลงทะเบียน</button>
+                </div>
+                <div class="search-page-group">
+                    <img src="Resourse/Poster/Screenshot 2025-10-03 231640.png" alt="Poster"
+                        class="search-page-Poster" />
+                    <span class="search-page-date">ศ, 03 ต.ค. - 10 ต.ค. 2568</span>
+                    <div class="search-page-time">
+                        <img src="Resourse/icon/clock.png" alt="clock" class="clock" />
+                        <span class="search-page-clock">09:30 - 16:30</span>
+                    </div>
+                    <span class="search-page-name">ชื่ออีเว้นท์</span>
+                    <div class="search-page-place">
+                        <img src="Resourse/icon/pin.png" alt="pin" class="pin" />
+                        <span class="search-page-pin">อาคารบรรยายรวม 2</span>
+                    </div>
+
+                    <button class="register-btn">ลงทะเบียน</button>
+                </div>
+            </div>
+            <!-- Selectpage -->
+            <div class="Selectpage">
+                <i class="material-icons" id="Previous" alt="dropdown arrow">keyboard_arrow_down</i>
+                <div class="search-page-group32">
+                    <div class="search-page-ellipse8">1</div>
+                </div>
+
+                <div class="search-page-group33">
+                    <div class="search-page-ellipse9">2</div>
+                </div>
+
+                <div class="search-page-group34">
+                    <div class="search-page-ellipse10">3</div>
+                </div>
+                <i class="material-icons" id="Next" alt="dropdown arrow">keyboard_arrow_down</i>
             </div>
         </div>
     </section>
 
     <footer>
-        <img src="Resourse/Footer.png" alt="Footer">
+        <img class="Footer-img" src="Resourse/Footer.png" alt="Footer">
+        <img class="Footer-tape" src="Resourse/png/Footer-tape.png" alt="Footertape">
     </footer>
 
 </body>

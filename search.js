@@ -72,6 +72,21 @@ document.addEventListener("click", function (event) {
   }
 });
 
+
+// scroll ไปหน้า searchpage เมื่ออยู่หน้าอื่น
+window.addEventListener('load', () => {
+  const params = new URLSearchParams(window.location.search);
+  const scrollTarget = params.get('scroll');
+  if (scrollTarget) {
+    const element = document.getElementById(scrollTarget);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+});
+
+
+
 (function () {
   // ชื่อ function เฉพาะ: EWDate_onSubmit เพื่อไม่ชนกับฟังก์ชันอื่น
   window.EWDate_onSubmit = function () {
