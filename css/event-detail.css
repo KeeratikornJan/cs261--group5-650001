@@ -236,8 +236,10 @@ section {
     margin-right: 5px;
 }
 .box_members {
+    display: inline-block;
+    overflow: hidden;
     font-family: "Pridi";
-    width: 175px;
+    max-width: 660px;
     height: 110px;
     color: black;
     border-radius: 32px;
@@ -249,25 +251,25 @@ section {
     font-size: 16px;
     font-weight: 300;
     text-align: center;
-    margin-bottom: 10px;
+    margin: 10px;
 }
 .box_members_num {
+    display: block;
     border-radius: 32px;
     color: #E64D4F;
     align-content: center;
     text-align: center;
-    margin: auto;
-    width: 95px;
+    min-width: 95px;
     border: 4px solid #E64D4F;
+    margin: 10px;
 }
 .box_members_num p {
     font-size: 20px;
     font-weight: 400;
-    justify-content: center;
-    margin: 0;
+    margin: 5px;
 }
 .box_members_num p i {
-    margin-right: 15px;
+    flex-shrink: 0; 
 }
 .box_organizes{
     width: 600px;
